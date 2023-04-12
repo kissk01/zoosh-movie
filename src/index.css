@@ -113,3 +113,10 @@ textarea {
 .linkIcon {
   color: white;
 }
+.imageBox {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  color: white;
+}
+.movieItemIcon {
+  color: rgba(255, 255, 255, 0.9) !important;
+}

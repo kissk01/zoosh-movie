@@ -30,13 +30,7 @@ const MovieList = () => {
 
   return (
     <>
-      <ImageList
-        gap={12}
-        sx={{
-          gridTemplateColumns:
-            'repeat(auto-fill, minmax(280px, 1fr))!important',
-        }}
-      >
+      <ImageList className='imageBox' gap={12}>
         {movieData.map((item, index) => (
           <ImageListItem key={item.id}>
             <img
@@ -51,7 +45,7 @@ const MovieList = () => {
               actionIcon={
                 <Link to={`/related/${item.id}`}>
                   <IconButton
-                    sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
+                    className='movieItemIcon'
                     aria-label={`info about ${item.name}`}
                   >
                     <AddCircleOutline />
@@ -71,7 +65,7 @@ const MovieList = () => {
               actionIcon={
                 <>
                   <IconButton
-                    sx={{ color: 'rgba(255, 255, 255, 0.9)' }}
+                    className='movieItemIcon'
                     aria-label={`wikipedia ${item.name}`}
                     onClick={() => handleWikipediaClick(index, item.name)}
                   >

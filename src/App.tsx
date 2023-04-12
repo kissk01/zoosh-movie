@@ -1,4 +1,4 @@
-import { Link, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 
 import { QueryParamProvider } from 'use-query-params';
@@ -10,20 +10,10 @@ function App() {
   return (
     <QueryParamProvider adapter={ReactRouter6Adapter}>
       <Routes>
-        <Route
-          path='/'
-          element={<Layout />}
-          handle={{ crumb: () => <Link to='/'>Home</Link> }}
-        >
+        <Route path='/' element={<Layout />}>
           <Route index element={<MovieList />} />
           <Route path='related'>
-            <Route
-              path=':relatedMovieId'
-              element={<RelatedMoviesPage />}
-              handle={{
-                crumb: () => <Link to='/related/:relatedMovieId'>Related</Link>,
-              }}
-            />
+            <Route path=':relatedMovieId' element={<RelatedMoviesPage />} />
           </Route>
         </Route>
 

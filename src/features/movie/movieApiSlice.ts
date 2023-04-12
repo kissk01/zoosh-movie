@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { WIKIPEDIA_SEARCH_URL, WikipediaResponse } from '../../queries/wiki';
-import { WikipediaData } from './movieSlice';
+import { WIKIPEDIA_SEARCH_URL } from '../../queries/wiki';
+
 import { LoadWikipedia } from './movieTypes';
+import { WikipediaData, WikipediaResponse } from '../wikipedia/wikipediaTypes';
 
 export const movieApi = createApi({
   reducerPath: 'movieApi',

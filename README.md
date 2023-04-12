@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Zoosh group Movie Application
 
 ## Available Scripts
 
@@ -29,18 +27,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Application description
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### **Basic details of the app**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Application searchs for Movies by Title, displays related movies, short wikipedia description with link.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### **Search view**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Search input is triggered with search button or enter, empty chars are not triggered. On search application returns found items or no content message. Shows movie items with data fields (title, year, genre).
 
-## Learn More
+### **Related view**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Related view page is triggered with 'more' button. Shows related movie items with data fields.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Header section**
+
+Header section contains search input and title of the current page.

@@ -1,22 +1,11 @@
+import { SearchMoviesQuery } from '../../__generated__/graphql';
 import {
-  FetchPopularQuery,
-  SearchMoviesQuery,
-} from '../../__generated__/graphql';
+  FetchPopularWikipediaItem,
+  SearchMovieWikipediaItem,
+} from '../wikipedia/wikipediaTypes';
 
 type SearchMovie = SearchMoviesQuery['searchMovies'];
-type SearchMovieItem = SearchMovie[0];
-
-interface SearchMovieWikipediaItem extends SearchMovieItem {
-  wikipediaContent?: string;
-  wikipediaPageId?: number;
-}
-
-type FetchPopular = FetchPopularQuery['movies'];
-type FetchPopularItem = FetchPopular[0];
-interface FetchPopularWikipediaItem extends FetchPopularItem {
-  wikipediaContent?: string;
-  wikipediaPageId?: number;
-}
+export type SearchMovieItem = SearchMovie[0];
 
 export type MovieData =
   | SearchMovieWikipediaItem[]

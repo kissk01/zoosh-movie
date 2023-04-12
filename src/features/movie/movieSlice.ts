@@ -14,17 +14,6 @@ interface SearchTermPayload {
   location: string;
 }
 
-export interface SetWikipediaData {
-  name: string;
-  index: number;
-}
-
-export interface WikipediaData {
-  content: string | undefined;
-  index: number;
-  pageId: number | null;
-}
-
 const initialState: MovieInitialState = {
   searchTerm: '',
   redirect: false,
@@ -37,6 +26,7 @@ export const movieSlice = createSlice({
   initialState,
   reducers: {
     searchTermChanged(state, action: PayloadAction<SearchTermPayload>) {
+      state.movieData = [];
       if (
         action.payload.searchTerm &&
         action.payload.searchTerm.length > minimumSearchLength
