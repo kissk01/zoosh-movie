@@ -1,0 +1,9 @@
+{
+  "short_name": "Zoosh movie application",
+  "name": "Zoosh movie application",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
