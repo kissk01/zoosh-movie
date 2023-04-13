@@ -4,7 +4,7 @@ export const transformMovieDescription = ({
   genres,
   releaseDate,
 }: MovieDataItem): string => {
-  let movieDescription = String(new Date(releaseDate).getFullYear());
+  let movieDescription = releaseDate;
   if (genres.length) {
     movieDescription += ' | ';
     movieDescription += genres[0].name;

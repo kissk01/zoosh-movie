@@ -4,7 +4,7 @@ import { MovieDataItem } from './movieTypes';
 const properMovieData: MovieDataItem = {
   id: '502356',
   name: 'The Super Mario Bros. Movie',
-  releaseDate: '2023-04-05T00:00:00.000Z',
+  releaseDate: '2023',
   genres: [
     {
       name: 'Animation',
@@ -31,7 +31,7 @@ const properMovieDescription = '2023 | Animation';
 const noGenreMovieData = {
   id: '757019',
   name: 'Fight',
-  releaseDate: '1973-01-01T00:00:00.000Z',
+  releaseDate: '1973',
   genres: [],
   img: {
     url: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/sKLsn8KckO0uP1jaQR7jsmGdkNj.jpg',

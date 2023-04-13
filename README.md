@@ -27,6 +27,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `yarn graphql-codegen`
+
+Generates code out of your GraphQL schema.
+
+About [package](https://github.com/dotansimha/graphql-code-generator) for more information.
+
 ## Application description
 
 ### **Basic details of the app**
